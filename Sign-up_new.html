@@ -5,9 +5,14 @@
 
 <style>
 body{
-  margin: 0;
-  padding: 0;
+  background-image: url("image1.png");
+  background-color: #2b3531;
+  height: 500px;
   font-family: Tahoma, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .form-area{
@@ -67,12 +72,12 @@ h3{
   outline: none;
   color: #ffffff;
   font-size: 15px;
-  background-color: tomato;
+  background-color: #2b3531;
   cursor: pointer;
   border-radius: 20px;
 }
 .form-area input[type=submit]:hover{
-  background-color: cyan;
+  background-color: tomato;
   color: #ffffff;
 }
 
@@ -86,15 +91,14 @@ h3{
 </style>
 
 </head>
-<body background="image1.jpg">
-  <p>Hacktoberfest 2021</p>
+<body>
   <div class="form-area">
     <h3><center>Sign In</center></h3>
     <form action="POST">
     <p>Username</p>
-    <input type="user" name="username" id= "" placeholder="enter your user name">
+    <input type="text" name="username" id= "" placeholder="Enter your user name">
     <p>Password</p>
-    <input type="password" name="password" id="" placeholder="enter your password">
+    <input type="password" name="password" id="" placeholder="Enter your password">
     <input type="submit" value="Sign In" name="signin" id="submit">
   </form>
 </div>
